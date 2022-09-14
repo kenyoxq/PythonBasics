@@ -1,2 +1,10 @@
 1. Faça um programa que peça um valor monetário e diminua-o em 15%. Seu
 programa deve imprimir a mensagem “O novo valor é [valor]”
+
+valor = input('Digite o seu valor atual:')
+valor = float(valor)
+valor = valor - (valor*0.15)
+print('O novo valor é:', valor)
+
+Digite o seu valor atual:500
+O novo valor é: 425.0
