@@ -8,3 +8,30 @@ print('O novo valor é:', valor)
 
 Digite o seu valor atual:500
 O novo valor é: 425.0
+
+
+2. Faça um programa que leia a validade das informações:
+a. Idade: entre 0 e 150;
+b. Salário: maior que 0;
+c. Sexo: M, F ou Outro;
+O programa deve imprimir uma mensagem de erro para cada informação
+inválida
+
+idade = input('Digite a sua idade:')
+if int(idade) <= 0 or int(idade) >= 150:
+   idade = input('Idade invalida, tente novamente:')
+
+salario = input('Digite o seu salario mensal:')
+if float(salario) <= 0:
+   salario = input('Salario invalido, tente novamente:')
+
+sexo = input('Digite o seu sexo:')
+if sexo != 'M' or sexo != 'F' or sexo != 'Outro':
+     sexo = input('sexo invalido, tente novamente:')
+     
+Digite a sua idade:380
+Idade invalida, tente novamente:35
+Digite o seu salario mensal:-50
+Salario invalido, tente novamente:1500
+Digite o seu sexo:masculino
+sexo invalido, tente novamente:M
