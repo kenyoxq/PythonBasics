@@ -18,20 +18,29 @@ O programa deve imprimir uma mensagem de erro para cada informação
 inválida
 
 idade = input('Digite a sua idade:')
-if int(idade) <= 0 or int(idade) >= 150:
+while int(idade) <= 0 or int(idade) >= 150:
    idade = input('Idade invalida, tente novamente:')
+print('Idade confirmada com sucesso!')
 
 salario = input('Digite o seu salario mensal:')
-if float(salario) <= 0:
+while float(salario) <= 0:
    salario = input('Salario invalido, tente novamente:')
+print('Salario confirmado com sucesso!')
 
 sexo = input('Digite o seu sexo:')
-if sexo != 'M' or sexo != 'F' or sexo != 'Outro':
+while sexo not in { 'M', 'F', 'Outro' }:
      sexo = input('sexo invalido, tente novamente:')
-     
-Digite a sua idade:380
-Idade invalida, tente novamente:35
-Digite o seu salario mensal:-50
+print('Sexo confirmado com sucesso!')
+
+Digite a sua idade:500
+Idade invalida, tente novamente:450
+Idade invalida, tente novamente:25
+Idade confirmada com sucesso!
+Digite o seu salario mensal:-500
+Salario invalido, tente novamente:-25
 Salario invalido, tente novamente:1500
+Salario confirmado com sucesso!
 Digite o seu sexo:masculino
+sexo invalido, tente novamente:feminino
 sexo invalido, tente novamente:M
+Sexo confirmado com sucesso!
